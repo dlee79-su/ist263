@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .part1 {display: flex;}
+            .part1 article {padding: 20px;}
+            .article1, .article2 {margin: 10px;}
+            .article1 {flex: 2; order: 1; background-color: #ebe7dd; border-radius: 1em;}
+            .article2 {flex: 1; order: 2; background-color: #ebe7dd; border-radius: 1em;}
+
+            .part2 {display: flex;}
+            .part2 article {padding: 20px;}
+            .article1, .article2 {margin: 10px;}
+            .article1 {flex: 2; order: 1; background-color: #ebe7dd; border-radius: 1em;}
+            .article2 {flex: 1; order: 2; background-color: #ebe7dd; border-radius: 1em;}
+        </style>
+    </head>
+    <body>
+        <nav> 
+            <a href="index.html">Home |</a> 
+            <a href="skills.html">Skills |</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <h1>Contact</h1>
+
+        <div class="part1">
+        <article class="article1">
+        <p>
+            Daniel Lee <br>
+            Syracuse University <br>
+            Hinds Hall <br>
+            Syracuse, NY 13244
+        </p>
+        </article>
+
+        <article class="article2">
+        <p>
+        <a href="mailto:dlee79@syr.edu">dlee79@syr.edu</a>
+        </p> 
+
+        <a href="https://www.linkedin.com/in/daniel-lee-4468a317b/"><img src="../images/logo-sized.png" alt="LinkedIn Logo">My LinkedIn Profile</a> <br>
+        </article>
+        </div>
+
+        <div class="part2">
+        <article class="article1">
+        <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1526945832416!2d-76.1355650845221!3d43.03821867914717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20iSchool!5e0!3m2!1sen!2sus!4v1614270090842!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+        </article>
+
+        <article class="article2">
+        <form action="mailto:dlee79@syr.edu" method="POST">
+            <label for="name">Enter Name:</label>
+           <input type="text" name="name" id="name"> <br>
+
+            <label for="positionneeded">Position Needed:</label> <br>
+            <textarea name="positionneeded" id="positionneeded" rows="10" cols="100">Tell me about the job you want me for!!</textarea> <br>
+
+            <label for="year">Urgency:</label>
+            <select name="year" id="year">
+                <option value="Im">Immediate</option>
+                <option value="Sd">Set Date</option>
+                <option value="Dc">Discretion</option>
+            </select> <br>
+            <input type="submit" value="Send Offer">
+        </form>
+        </article>
+        </div>
+    </body>
+</html>
+
