@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 10 Notes Accessability</title>
+        <style>
+            #skip {
+                position: absolute;
+                left: -999px;
+            }
+            /* this position based on top left of viewport and pushes the skip link off screen */
+            #skip:focus {
+                position: absolute;
+                left: 10px;
+            }
+            /* when you tab to skip link it moves it back on the screen */
+        </style>
+    </head>
+    <body>
+        <h1>Accessability</h1>
+        <!-- make sure you use h1 for main heading, h2 for subheading, h3 for sub-subheading, etc. -->
+
+        <img src="../images/logo-sized.png" alt="">
+        <!-- nothing in quotes means screen reader ignores -->
+        <!-- do not put image of or photo of -->
+
+        <a href="#maincontent" id="skip">Skip to Content</a>
+        <!-- pound sign says we are linking within page to an element that has an id of maincontent-->
+        <a href="http://www.google.com" tabindex="3">Google</a>
+        <a href="http://www.amazon.com>" tabindex="2">Amazon</a>
+        <a href="http://www.ebay.com" tabindex="1">Ebay</a>
+        <!-- for complex layouts determine order of items tabbed through -->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et libero in nulla sagittis maximus. Vestibulum ultricies augue ac urna bibendum sollicitudin. Praesent eleifend libero quis erat mattis cursus. Phasellus placerat arcu ut aliquet sagittis. Sed pharetra venenatis est, elementum tempus neque sollicitudin ac. Nulla scelerisque fermentum mauris, ut malesuada ipsum aliquam consequat. Pellentesque malesuada dapibus augue maximus commodo. Donec ligula eros, tincidunt a suscipit maximus, bibendum vitae urna. Maecenas dolor est, cursus in tortor nec, porttitor ornare velit. Quisque et mi nec arcu rutrum pretium. Donec a lorem erat. Praesent sagittis, purus quis condimentum sollicitudin, lectus quam fermentum quam, in dignissim purus nisl at nulla. Ut ullamcorper mi sed volutpat pulvinar. Quisque turpis velit, lobortis at porttitor sit amet, porta et lectus. Nulla tristique tincidunt velit, id gravida ex tempor eu.</p>
+
+        <a id="maincontent"></a>
+        <!-- Here's the thing the anchor tag tag links to -->
+        <p>Mauris facilisis, orci ut tristique luctus, nunc turpis luctus urna, vel sollicitudin purus justo ut lorem. Ut accumsan risus magna, eget fringilla tortor bibendum eu. Donec facilisis tellus eget erat imperdiet venenatis. Aliquam non dolor bibendum, rhoncus urna id, consequat nibh. Fusce tempor pharetra dolor, sit amet suscipit arcu bibendum quis. Nunc vitae neque ut risus blandit tempor quis vitae sem. Vestibulum erat diam, consectetur sit amet sapien sed, semper mattis nulla. Morbi eget mollis lectus. Cras dolor elit, placerat eu tristique vitae, semper eu elit. Cras ut tellus lacinia, dictum nibh quis, consectetur felis. Aliquam eget varius urna. Maecenas eget aliquet ante, eleifend laoreet lorem. In feugiat, est a porta aliquam, ex sem sollicitudin enim, vitae placerat nunc nisi suscipit felis. Suspendisse molestie eros dui, aliquet finibus odio mattis vel. Curabitur bibendum, nisi ac varius accumsan, velit est dignissim diam, ut maximus metus purus vitae dui. Sed quis nibh lacus.</p>
+    </body>
+</html>

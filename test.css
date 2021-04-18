@@ -1,0 +1,13 @@
+
+
+nav a:hover {background-color: #ffa500;}
+
+
+a:visited {color: #ffa500;}
+
+
+nav a {color: #ff0000;}
+
+div {display: flex;}
+.columnb {order: 1;}
+.columna {order: 2;}
