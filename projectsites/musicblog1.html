@@ -34,17 +34,42 @@
             }
 
             h1 {font-family: 'Freckle Face', cursive;}
+
+            #hamicon {display: none;}
+            nav a:hover {background-color: #ebe7dd;}
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                    }
+                #navlinks {display: none;}
+            }
         </style>
+        <script>
+            function changenav () {
+                if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navlinks").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlinks").style.display = "block";
+                }
+            }
+        </script>
     </head>
 
     <body>
         <nav> 
-            <a href="home.html" tabindex="6">Home<span> |</span></a> 
-            <a href="about.html" tabindex="5">About<span> |</span></a>
-            <a href="photography.html" tabindex="4">Photography<span> |</span></a>
-            <a href="fashion.html" tabindex="3">Fashion<span> |</span></a>
-            <a href="interiordesign.html" tabindex="2">Interior Design<span> |</span></a>
-            <a href="music.html" tabindex="1">Music</a>
+            <img src="https://laferger.github.io/ist263/images/hamburger.png" id="hamicon" alt="hamburger icon" width="35" onclick="changenav();">
+            <div id="navlinks">
+                <a href="home.html" tabindex="6">Home<span> |</span></a> 
+                <a href="about.html" tabindex="5">About<span> |</span></a>
+                <a href="photography.html" tabindex="4">Photography<span> |</span></a>
+                <a href="fashion.html" tabindex="3">Fashion<span> |</span></a>
+                <a href="interiordesign.html" tabindex="2">Interior Design<span> |</span></a>
+                <a href="music.html" tabindex="1">Music</a>
+            </div>
         </nav>
 
         <h1>Current Favorites</h1>
